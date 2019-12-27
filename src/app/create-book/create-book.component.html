@@ -1,0 +1,7 @@
+<a routerLink="/books">Back to home</a>
+<h3>Create Book</h3>
+<form (ngSubmit)="onsubmit()" [formGroup]="createForm">
+  <p>Book Name</p>
+  <input type="text" placeholder="book name" formControlName="name" class="form-control-sm">
+  <button class="btn btn-success">Submit</button>
+</form>

@@ -1,0 +1,19 @@
+<br>
+<a routerLink="">Back Homepage</a>
+<div class="row">
+  <table class="table table-striped" style="width: 500px">
+    <thead class="thead-light">
+    <th colspan="2">List Book</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of listBook">
+      <td>{{book.name}}</td>
+      <td><button  class="btn btn-primary">Read Book</button></td>
+    </tr>
+    <tr class="thead-dark" style="float: right">
+      <td><button [routerLink]="['/books/create']">Create new Book</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<a routerLink="/read">List Read Book</a>

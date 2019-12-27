@@ -1,0 +1,16 @@
+<br>
+<a routerLink="">Back Homepage</a>
+<div class="row">
+  <table class="table table-striped" style="width: 500px">
+    <thead class="thead-light">
+    <th colspan="2">List Read Book</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of listReadBook">
+      <td>{{book.name}}</td>
+      <td><button  class="btn btn-primary">Read Book</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<a routerLink="/books">List Book</a>
